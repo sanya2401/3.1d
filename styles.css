@@ -1,0 +1,273 @@
+body {
+    font-size: 16px;
+    margin: 0px;
+    background-color: grey;
+}
+
+:root {
+    --mainhead: rgb(211, 208, 208);
+    --subhead: rgb(233, 231, 231);
+    --secondaryhead: rgb(236, 234, 234);
+    --background-color: rgb(57, 57, 57);
+}
+
+/*navigation bar*/
+nav {
+    background-color: black;
+}
+
+#nav_list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+
+}
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-image: url(images/hero_bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/*headings*/
+.mainhead {
+    font-family: fantasy;
+    font-size: 6rem;
+    color: var(--mainhead);
+    text-shadow: 0.2rem 0.2rem black;
+    padding: 2rem;
+}
+
+.subhead {
+    font-family: cursive;
+    font-size: 2rem;
+    color: var(--subhead);
+    text-shadow: 0.1rem 0.1rem black;
+    padding: 1.5rem;
+}
+
+.secondaryhead {
+    color: var(--secondaryhead);
+    font-size: 3rem;
+    text-shadow: 0.08rem 0.08rem black;
+    font-family: cursive;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    box-shadow: 0.2rem 0.2rem grey;
+}
+
+.header_container {
+    max-width: fit-content;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(89, 88, 88, 0.3);
+    border-radius: 3%;
+}
+
+.button {
+    max-width: fit-content;
+    margin: auto;
+}
+
+main {
+    display: flex;
+
+
+}
+
+aside {
+    margin: auto 0.2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15%;
+    position: fixed;
+    top: 2rem;
+}
+
+aside figure {
+    margin: 0.5rem;
+}
+
+aside img {
+    width: 5rem;
+    border-radius: 50%;
+
+}
+
+#overview_container {
+    width: 75%;
+
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgb(34, 34, 34);
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 4rem;
+}
+
+footer span {
+    color: white;
+}
+
+/*overview*/
+#overview_container {
+    max-width: 90%;
+    width: fit-content;
+    margin: auto;
+    /* display: flex;
+    justify-content: right; */
+    position: relative;
+    right: auto;
+    left: auto;
+}
+
+.detail {
+    display: flex;
+    padding: 1rem;
+}
+
+.overview {
+    /* grid-area: 'overview'; */
+    width: 60%;
+    background-color: rgb(88, 87, 87);
+    color: white;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 49, 49);
+    margin: 0.5rem;
+    border-radius: 2%;
+    padding: 0.5rem;
+    inset: 0.3rem grey;
+}
+
+.image_container>img {
+    width: 5rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.cuisine {
+    max-width: 90%;
+    width: fit-content;
+    margin: 2rem auto;
+    background-color: rgb(57, 57, 57);
+    border-radius: 1.5%;
+
+}
+
+.button {
+    padding: 0.5rem;
+    margin: 0.4rem 0.5rem;
+    background-color: black;
+    box-shadow: grey;
+    color: white;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#about_container {
+    max-width: 80vw;
+    margin: auto;
+}
+
+#about {
+    background-color: rgb(50, 49, 49);
+    border-radius: 2%;
+}
+
+#about p {
+    color: white;
+    padding: 1rem;
+}
+
+#feedback_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(57, 57, 57, 0.5);
+    padding: 3rem;
+    max-width: fit-content;
+    margin: 2rem auto;
+}
+
+#feedback {
+    margin: 2rem auto;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(207, 206, 206);
+    text-shadow: 0.1rem 0.1rem black;
+}
+
+input {
+    max-width: fit-content;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10%;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+textarea {
+    max-width: fit-content;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10%;
+    margin: 0.5rem;
+}
+
+#map {
+    height: 10rem;
+    width: 10rem;
+}
+
+.item_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.8rem;
+
+}
+
+.itemimg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0.5rem 0.5rem black;
+}
+
+.menuhead {
+    width: 75vw;
+    margin: 3rem auto;
+
+    background-color: rgb(50, 50, 50);
+}

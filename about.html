@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cuisines of India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="medium.css">
+    <link rel="stylesheet" href="small.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNxGzuBxdwoF2uDTzXR2eia8EuUhWrCds&libraries=places"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+        
+            <div id="nav_list">
+                <a class="verdana" href="index.html">HOME</a>
+                <a class="verdana" href="about.html">ABOUT</a>
+                <a class="verdana" href="#contact">CONTACT</a>
+                <a class="verdana" href="#feedback">FEEDBACK</a>
+            </div>
+        </nav>
+
+        <div class="header_container">
+            <h1 class="mainhead">Cuisines Of India</h1>
+            <h2 class="subhead">Have a taste of the great Indian Cuisines!</h2>
+            <button class="button">Explore</button>
+        </div>
+    </header>
+    <main>
+        <aside v-if="showaside">
+            <a href="north.html">
+                <figure>
+                    <img src="images/Dal Makhni.png" alt="">
+                    <figcaption>Northern</figcaption>
+                </figure>
+            </a>\
+            <a href="east.html">
+                <figure>
+                    <img src="images/Dal Makhni.png" alt="">
+                    <figcaption>Eastern</figcaption>
+                </figure>
+            </a>
+            <a href="west.html">
+                <figure>
+                    <img src="images/Dal Makhni.png" alt="">
+                    <figcaption>Western</figcaption>
+                </figure>
+            </a>
+            <a href="south.html">
+                <figure>
+                    <img src="images/Dal Makhni.png" alt="">
+                    <figcaption>Southern</figcaption>
+                </figure>
+            </a>
+        </aside>
+        <div id="about_container">
+        <div id="about">
+            <h3 class="secondaryhead">About Us</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus porro maxime sed dicta voluptatum nostrum assumenda at neque ullam itaque dolorem, expedita molestiae perspiciatis, libero vitae in placeat eos beatae, hic quia deleniti quibusdam dolore explicabo? Provident cumque omnis ad labore laboriosam eaque enim quae soluta id ratione ea, ex in eveniet at nulla adipisci, nihil dolor doloribus incidunt laudantium maiores reiciendis veritatis voluptatibus voluptas. Animi distinctio libero, labore, delectus natus dolorem qui porro laudantium veniam ipsa numquam? Minima cupiditate consequatur id, aspernatur facilis illo exercitationem labore, odio doloribus quos quasi non, delectus optio magnam voluptatem! Recusandae voluptas officiis laboriosam sint! Libero cumque quia quod, commodi sed inventore dolorem doloribus, iusto, perspiciatis delectus dolore odio? Ratione aliquam iusto eveniet tempora perspiciatis consequuntur doloremque corrupti vitae illum nostrum optio, tenetur ipsam. Laudantium mollitia veritatis excepturi est maxime consequatur perspiciatis amet dolorum exercitationem atque ipsum enim maiores minus impedit dolor, blanditiis vitae a saepe aliquid dignissimos. A ratione velit vero iste asperiores, quia blanditiis mollitia reprehenderit molestias id minus labore, officia, veniam suscipit vitae aperiam at magni sapiente. Enim obcaecati saepe, iste ullam aperiam eius non id eveniet, officia dolore voluptate quam magni veniam exercitationem necessitatibus nostrum, distinctio blanditiis fuga ipsum velit inventore porro suscipit dicta! Minima itaque omnis cumque distinctio ducimus repellat asperiores autem nemo quia reiciendis provident dolorum vitae nihil labore, nulla quasi temporibus delectus mollitia laudantium alias neque impedit. Ducimus maiores id rerum ab, numquam, beatae sapiente veritatis officiis tenetur eveniet, debitis cum a laborum repellendus. Quo alias officiis consectetur perferendis fugiat harum eum libero labore laudantium asperiores obcaecati enim ipsam pariatur rem veniam dolorem quod distinctio voluptatem, blanditiis repudiandae suscipit facilis neque nam. Non voluptate consequatur, vitae nesciunt voluptates nostrum pariatur laborum quo dicta similique ex error exercitationem blanditiis eius! Dolorem suscipit aliquid molestiae nisi recusandae ullam dignissimos.</p>
+        </div>
+
+        <div id="map"></div>
+
+
+        <div id="feedback">
+            <h3 class="secondaryhead">Give us your feedback</h3>
+            <form action="feedback.php" id="feedback_form">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Rate your experience</label>
+                <input type="number" name="rating" id="rating">
+
+                <label for="feedback">Your feedback</label>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+
+                <input class="button" type="button" id="button" name="insert" value="insert">
+
+
+            </form>
+        </div>
+        </div>
+
+           
+            
+        
+    </main>
+    <footer id="contact">
+        <section>
+            <img src="images/facebook.png" alt="">
+            <span>Cuisines Of India</span>
+        </section>
+        <section>
+            <img src="images/instagram.jpeg" alt="">
+            <span>CuisinesOfIndia</span>
+        </section>
+        <section>
+            <img src="images/twitter.png" alt="">
+            <span>Cuisines Of India</span>
+        </section>
+        <section>
+            <img src="images/gmail.png" alt="">
+            <span>CuisinesOfIndia@gmail.com</span>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 0, lng: 180 },
+            zoom: 200
+          });
+        }
+        window.onload = initMap;
+      </script>
+</body>
+
+</html>
